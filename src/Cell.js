@@ -7,7 +7,7 @@ export default class Cell extends Component {
     }
 
     grey = (event) => {
-      event.preventDefault()
+        event.preventDefault()
         this.setState({color: "#333"});
     }
 
