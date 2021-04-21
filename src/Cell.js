@@ -6,16 +6,13 @@ export default class Cell extends Component {
         this.state = {color: this.props.value}
     }
 
-    grey = (event) => {
-        event.preventDefault()
+    grey = () => {
         this.setState({color: "#333"});
     }
 
     render() {
         return (
-          <div className="cell" style={{backgroundColor: this.state.color}} onClick={this.grey}>
-            Something
-          </div>
+          <div className="cell" style={{backgroundColor: this.state.color}} onClick={this.grey}></div>
         )
     }
 
