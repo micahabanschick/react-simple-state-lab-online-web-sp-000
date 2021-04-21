@@ -6,7 +6,9 @@ export default class Cell extends Component {
         this.state = {color: this.props.value}
     }
 
-    grey = () => this.setState({color: "#333"});
+    grey = () => {
+        this.setState({color: "#333"});
+    }
 
     render() {
         return (
